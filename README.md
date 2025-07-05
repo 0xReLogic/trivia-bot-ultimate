@@ -74,7 +74,7 @@ Pastikan sistem Anda telah menginstal perangkat lunak berikut:
 
 1.  **Clone repository ini:**
     ```bash
-    git clone <URL_REPOSITORY_ANDA>
+    git clone https://github.com/0xReLogic/trivia-bot-ultimate
     cd trivia-bot-ultimate
     ```
 
