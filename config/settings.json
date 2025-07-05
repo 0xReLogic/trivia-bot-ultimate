@@ -1,0 +1,47 @@
+{
+  "performance": {
+    "max_retry_count": 3
+  },
+  "learning": {
+    "similarity_threshold": 0.85
+  },
+  "ai_tiers": {
+    "TinyLLM": {
+      "enabled": true,
+      "model_path": "models/tinymistral-248m-v2.5-instruct.Q4_K_M.gguf"
+    },
+    "GeminiAPI": {
+      "enabled": false,
+      "api_key": "YOUR_GEMINI_API_KEY_HERE",
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+    }
+  },
+  "device": {
+    "adb_device_id": "emulator-5554",
+    "tap_coordinates": {
+      "A": [540, 1300],
+      "B": [540, 1450],
+      "C": [540, 1600],
+      "D": [540, 1750]
+    },
+    "ocr_regions": {
+      "question": [50, 400, 980, 700],
+      "answers": [50, 1200, 980, 650],
+      "feedback": [50, 800, 980, 400]
+    }
+  },
+  "color_thresholds": {
+    "correct_feedback": {
+      "bgr_min": [0, 180, 0],
+      "bgr_max": [80, 255, 80]
+    },
+    "wrong_feedback": {
+      "bgr_min": [0, 0, 180],
+      "bgr_max": [80, 80, 255]
+    },
+    "neutral_feedback": {
+      "bgr_min": [200, 200, 200],
+      "bgr_max": [255, 255, 255]
+    }
+  }
+}
